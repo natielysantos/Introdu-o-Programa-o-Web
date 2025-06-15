@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício Completo - Fontes e Cores</title>
+  <style>
+    /* EXERCÍCIO 1 - TAMANHOS DE FONTE */
+    html {
+      font-size: 20px;
+    }
+
+    html h1 {
+      font-size: 2rem; /* 2 x 20px = 40px */
+    }
+
+    h1 > .principal {
+      font-size: 1.4em; /* 1.4 x 40px = 56px */
+    }
+
+    html .secundario {
+      font-size: 1.4rem; /* 1.4 x 20px = 28px */
+    }
+
+    /* Estilo geral */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* EXERCÍCIO 2 - CORES */
+    .cores {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .cor {
+      width: 150px;
+      height: 100px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .original  { background-color: rgb(219, 78, 68); }
+    .clara     { background-color: rgb(224, 105, 96); }
+    .escura    { background-color: rgb(186, 66, 58); }
+  </style>
+</head>
+<body>
+
+  <!-- EXERCÍCIO 1 -->
+  <section>
+    <h2>Exercício 1 – Tamanhos de Fonte</h2>
+
+    <h1>
+      Título Principal -
+      <span class="principal">Texto Principal</span>
+    </h1>
+
+    <p class="secundario">Texto Secundário</p>
+
+    <p>
+      <strong>Resumo dos tamanhos:</strong><br>
+      <code>h1</code> = 40px<br>
+      <code>.principal</code> = 56px<br>
+      <code>.secundario</code> = 28px
+    </p>
+  </section>
+
+  <!-- EXERCÍCIO 2 -->
+  <section>
+    <h2>Exercício 2 – Variação da Cor RGB(219, 78, 68)</h2>
+
+    <div class="cores">
+      <div class="cor original">Original<br>rgb(219, 78, 68)</div>
+      <div class="cor clara">+15% Clara<br>rgb(224, 105, 96)</div>
+      <div class="cor escura">-15% Escura<br>rgb(186, 66, 58)</div>
+    </div>
+  </section>
+
+</body>
+</html>
